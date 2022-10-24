@@ -3,5 +3,39 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "ngx-json-api": {
+      "projectType": "library",
+      "root": "projects/ngx-json-api",
+      "sourceRoot": "projects/ngx-json-api/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-json-api/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-json-api/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-json-api/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-json-api/src/test.ts",
+            "tsConfig": "projects/ngx-json-api/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-json-api/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "f2f587fe-a54c-4bc5-95d7-e313df89089a"
   }
 }
