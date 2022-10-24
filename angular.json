@@ -31,11 +31,23 @@
             "tsConfig": "package/tsconfig.spec.json",
             "karmaConfig": "package/karma.conf.js"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "package/**/*.ts",
+              "package/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "f2f587fe-a54c-4bc5-95d7-e313df89089a"
+    "analytics": "f2f587fe-a54c-4bc5-95d7-e313df89089a",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
