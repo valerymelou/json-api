@@ -29,4 +29,16 @@ jobs:
 
       - run: yarn install --frozen-lockfile
       - uses: nrwl/nx-set-shas@v4
+
+      # Run tests and generate coverage
       - run: yarn nx affected -t lint test build
+
+      # Upload test coverage to CodeClimate
+      - name: Upload coverage to Code Climate
+        uses: paambaati/codeclimate-action@v5.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        with:
+          coverageLocations: |
+            ${{github.workspace}}/coverage/libs/jsonapi/lcov.info:lcov
+            ${{github.workspace}}/coverage/libs/jsonapi/angular/lcov.info:lcov

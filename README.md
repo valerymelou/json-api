@@ -1,6 +1,6 @@
 # JSON:API Library
 
-[![CI Build](https://img.shields.io/github/actions/workflow/status/vmelou/jsonapi/ci.yml?branch=main&label=build)](https://github.com/vmelou/jsonapi/actions/workflows/ci.yml)
+[![CI](https://github.com/valerymelou/json-api/actions/workflows/ci.yml/badge.svg)](https://github.com/valerymelou/json-api/actions/workflows/ci.yml)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/b41cc3a8a2b1654f2b4a/test_coverage)](https://codeclimate.com/github/valerymelou/json-api/test_coverage)
 [![License: MIT](https://img.shields.io/npm/l/@vmelou/jsonapi)](https://opensource.org/licenses/MIT)
 

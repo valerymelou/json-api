@@ -1,7 +1,5 @@
 # @vmelou/jsonapi
 
-[![CI Build](https://img.shields.io/github/actions/workflow/status/vmelou/jsonapi/ci.yml?branch=main&label=build)](https://github.com/vmelou/jsonapi/actions/workflows/ci.yml)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/b41cc3a8a2b1654f2b4a/test_coverage)](https://codeclimate.com/github/valerymelou/json-api/test_coverage)
 [![npm version](https://img.shields.io/npm/v/@vmelou/jsonapi)](https://www.npmjs.com/package/@vmelou/jsonapi)
 [![License: MIT](https://img.shields.io/npm/l/@vmelou/jsonapi)](https://opensource.org/licenses/MIT)
 
