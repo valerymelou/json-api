@@ -1,5 +1,5 @@
 {
-  "name": "@vmelou/jsonapi",
+  "name": "avmelou/jsonapi",
   "version": "0.0.1",
   "type": "commonjs",
   "main": "./src/index.js",

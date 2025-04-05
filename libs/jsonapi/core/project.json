@@ -1,7 +1,7 @@
 {
-  "name": "jsonapi",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/jsonapi/src",
+  "name": "json-api",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/jsonapi/core/src",
   "projectType": "library",
   "release": {
     "version": {
@@ -18,10 +18,10 @@
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/jsonapi",
-        "main": "libs/jsonapi/src/index.ts",
-        "tsConfig": "libs/jsonapi/tsconfig.lib.json",
-        "assets": ["libs/jsonapi/*.md"]
+        "outputPath": "dist/libs/jsonapi/core",
+        "main": "libs/jsonapi/core/src/index.ts",
+        "tsConfig": "libs/jsonapi/core/tsconfig.lib.json",
+        "assets": ["libs/jsonapi/core/*.md"]
       }
     },
     "nx-release-publish": {
@@ -33,7 +33,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/jsonapi/jest.config.ts"
+        "jestConfig": "libs/jsonapi/core/jest.config.ts"
       }
     }
   }
