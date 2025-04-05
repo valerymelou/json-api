@@ -1,6 +1,6 @@
 {
   "name": "@vmelou/jsonapi",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "commonjs",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/jsonapi.git"
+    "url": "https://github.com/valerymelou/json-api.git"
   },
   "license": "MIT"
 }
