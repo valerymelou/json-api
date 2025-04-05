@@ -1,13 +1,18 @@
 {
   "name": "@vmelou/jsonapi-angular",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "publishConfig": {
     "access": "public"
   },
   "peerDependencies": {
     "@angular/common": "^19.2.0",
-    "@vmelou/jsonapi": "^0.1.0",
+    "@vmelou/jsonapi": "^0.3.0",
     "rxjs": "^7.8.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/jsonapi-angular.git"
+  },
+  "license": "MIT"
 }
