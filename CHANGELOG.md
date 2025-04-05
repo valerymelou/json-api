@@ -1,3 +1,13 @@
+## 0.4.0 (2025-04-05)
+
+### 🚀 Features
+
+- update package versions to 0.4.0 and correct repository URLs ([4b6e973](https://github.com/valerymelou/json-api/commit/4b6e973))
+
+### ❤️ Thank You
+
+- Valery Melou @valerymelou
+
 ## 0.3.0 (2025-04-05)
 
 ### 🚀 Features
