@@ -1,82 +1,61 @@
-# Vmelou
+# JSON:API Library
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+[![CI Build](https://img.shields.io/github/actions/workflow/status/vmelou/jsonapi/ci.yml?branch=main&label=build)](https://github.com/vmelou/jsonapi/actions/workflows/ci.yml)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/b41cc3a8a2b1654f2b4a/test_coverage)](https://codeclimate.com/github/valerymelou/json-api/test_coverage)
+[![License: MIT](https://img.shields.io/npm/l/@vmelou/jsonapi)](https://opensource.org/licenses/MIT)
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+A TypeScript implementation of the [JSON:API](https://jsonapi.org/) specification. This monorepo contains the following packages:
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+- [@vmelou/jsonapi](libs/jsonapi/core/README.md) - Core library for serializing and deserializing JSON:API data
+- [@vmelou/jsonapi-angular](libs/jsonapi/angular/README.md) - Angular integration with HttpClient and RxJS support
 
-## Finish your CI setup
+## Features
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/5EgDgRufzA)
+### Core Library (@vmelou/jsonapi)
 
+- Serialize TypeScript classes to JSON:API compliant objects
+- Deserialize JSON:API responses into TypeScript class instances
+- Support for relationships and included resources
+- Handles primitive types and Date objects
+- Support for collection responses with pagination
+- Error handling with JSON:API error objects
 
-## Run tasks
+### Angular Integration (@vmelou/jsonapi-angular)
 
-To run the dev server for your app, use:
+- Complete integration with Angular's HttpClient
+- RxJS Observables for all API operations
+- Support for CRUD operations (Create, Read, Update, Delete)
+- List operations with pagination and filtering
+- Error handling with JSON:API error objects
+- TypeScript type safety
 
-```sh
-npx nx serve vmelou
+## Quick Start
+
+### Core Library
+
+```bash
+npm install @vmelou/jsonapi
 ```
 
-To create a production bundle:
+### Angular Integration
 
-```sh
-npx nx build vmelou
+```bash
+npm install @vmelou/jsonapi @vmelou/jsonapi-angular
 ```
 
-To see all available targets to run for a project, run:
+## Documentation
 
-```sh
-npx nx show project vmelou
-```
+- [Core Library Documentation](libs/jsonapi/core/README.md)
+- [Angular Integration Documentation](libs/jsonapi/angular/README.md)
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+## Contributing
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for more details on how to get involved.
 
-## Add new projects
+## Changelog
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+Detailed changes for each release are documented in the [CHANGELOG.md](CHANGELOG.md) file.
 
-Use the plugin's generator to create new projects.
+## License
 
-To generate a new application, use:
-
-```sh
-npx nx g @nx/angular:app demo
-```
-
-To generate a new library, use:
-
-```sh
-npx nx g @nx/angular:lib mylib
-```
-
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
-
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+MIT

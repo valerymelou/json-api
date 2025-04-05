@@ -8,7 +8,8 @@ on:
 
 permissions:
   actions: read
-  contents: read
+  contents: write
+  packages: write
 
 jobs:
   main:
@@ -23,7 +24,16 @@ jobs:
         with:
           node-version: 20
           cache: 'yarn'
+          # Setup NPM authentication
+          registry-url: 'https://registry.npmjs.org'
 
       - run: yarn install --frozen-lockfile
       - uses: nrwl/nx-set-shas@v4
       - run: yarn nx affected -t lint test build
+
+      # Publish packages when pushing to main
+      - name: Publish to NPM
+        if: github.ref == 'refs/heads/main'
+        run: yarn nx affected -t nx-release-publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
