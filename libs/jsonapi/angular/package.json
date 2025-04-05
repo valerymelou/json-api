@@ -1,12 +1,12 @@
 {
   "name": "@vmelou/jsonapi-angular",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publishConfig": {
     "access": "public"
   },
   "peerDependencies": {
     "@angular/common": "^19.2.0",
-    "@vmelou/jsonapi": "^0.0.1",
+    "@vmelou/jsonapi": "^0.1.0",
     "rxjs": "^7.8.0"
   },
   "sideEffects": false

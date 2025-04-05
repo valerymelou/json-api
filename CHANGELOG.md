@@ -31,7 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - None
 
-## [@vmelou/jsonapi-angular@0.0.1] - 2025-04-05
+## [@vmelou/jsonapi-angular@0.1.0] - 2025-04-05
 
 ### Added
 
@@ -42,7 +42,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Error handling with JSON:API error objects
 - Complete documentation with examples
 
-## [@vmelou/jsonapi@0.0.1] - 2025-04-05
+## [@vmelou/jsonapi@0.1.0] - 2025-04-05
 
 ### Added
 
@@ -54,6 +54,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - TypeScript decorators for class and property mapping
 - Comprehensive documentation and examples
 
-[Unreleased]: https://github.com/vmelou/jsonapi/compare/v0.0.1...HEAD
-[@vmelou/jsonapi-angular@0.0.1]: https://github.com/vmelou/jsonapi/releases/tag/jsonapi-angular-v0.0.1
-[@vmelou/jsonapi@0.0.1]: https://github.com/vmelou/jsonapi/releases/tag/jsonapi-v0.0.1
+[Unreleased]: https://github.com/vmelou/jsonapi/compare/v0.1.0...HEAD
+[@vmelou/jsonapi-angular@0.1.0]: https://github.com/vmelou/jsonapi/releases/tag/jsonapi-angular-v0.1.0
+[@vmelou/jsonapi@0.1.0]: https://github.com/vmelou/jsonapi/releases/tag/jsonapi-v0.1.0
