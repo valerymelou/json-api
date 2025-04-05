@@ -1,3 +1,13 @@
+## 0.3.0 (2025-04-05)
+
+### 🚀 Features
+
+- add repository and license information to package.json files ([a5cbe76](https://github.com/valerymelou/json-api/commit/a5cbe76))
+
+### ❤️ Thank You
+
+- Valery Melou @valerymelou
+
 ## 0.2.0 (2025-04-05)
 
 ### 🚀 Features
