@@ -33,7 +33,7 @@ jobs:
 
       # Publish packages when pushing to main
       - name: Publish to NPM
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/master'
         run: yarn nx affected -t nx-release-publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
