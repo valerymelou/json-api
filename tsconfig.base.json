@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "avmelou/jsonapi": ["libs/jsonapi/core/src/index.ts"]
+      "@vmelou/jsonapi-angular": ["libs/jsonapi/angular/src/index.ts"],
+      "@vmelou/jsonapi": ["libs/jsonapi/core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

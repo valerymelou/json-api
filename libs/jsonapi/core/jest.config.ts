@@ -1,5 +1,5 @@
 export default {
-  displayName: 'json-api',
+  displayName: 'jsonapi',
   preset: '../../../jest.preset.js',
   testEnvironment: 'node',
   transform: {
