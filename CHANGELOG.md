@@ -1,3 +1,13 @@
+## 0.4.1 (2025-07-26)
+
+### 🩹 Fixes
+
+- ensure relationships object is initialized in serialize function ([a9afe69](https://github.com/valerymelou/json-api/commit/a9afe69))
+
+### ❤️ Thank You
+
+- Valery Melou @valerymelou
+
 ## 0.4.0 (2025-04-05)
 
 ### 🚀 Features
