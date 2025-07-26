@@ -171,6 +171,10 @@ export function serialize<T extends BaseResource>(
         }
 
         if (Array.isArray(value)) {
+          if (!payload.data.relationships) {
+            payload.data.relationships = {};
+          }
+
           (payload.data.relationships as Record<string, unknown>)[attribute] = {
             data: value.map((item) => {
               return serialize(type as Constructor<BaseResource>, item, true)
