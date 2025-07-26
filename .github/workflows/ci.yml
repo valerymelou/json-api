@@ -36,11 +36,11 @@ jobs:
       - run: yarn nx affected -t build
 
       # Upload test coverage to CodeClimate
-      - name: Upload coverage to Code Climate
-        uses: paambaati/codeclimate-action@v9.0.0
-        env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-        with:
-          coverageLocations: |
-            ${{github.workspace}}/coverage/libs/jsonapi/core/lcov.info:lcov
-            ${{github.workspace}}/coverage/libs/jsonapi/angular/lcov.info:lcov
+      # - name: Upload coverage to Code Climate
+      #   uses: paambaati/codeclimate-action@v9.0.0
+      #   env:
+      #     CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+      #   with:
+      #     coverageLocations: |
+      #       ${{github.workspace}}/coverage/libs/jsonapi/core/lcov.info:lcov
+      #       ${{github.workspace}}/coverage/libs/jsonapi/angular/lcov.info:lcov

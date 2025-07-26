@@ -1,7 +1,9 @@
 # JSON:API Library
 
 [![CI](https://github.com/valerymelou/json-api/actions/workflows/ci.yml/badge.svg)](https://github.com/valerymelou/json-api/actions/workflows/ci.yml)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/b41cc3a8a2b1654f2b4a/test_coverage)](https://codeclimate.com/github/valerymelou/json-api/test_coverage)
+
+<!-- [![Test Coverage](https://api.codeclimate.com/v1/badges/b41cc3a8a2b1654f2b4a/test_coverage)](https://codeclimate.com/github/valerymelou/json-api/test_coverage) -->
+
 [![License: MIT](https://img.shields.io/npm/l/@vmelou/jsonapi)](https://opensource.org/licenses/MIT)
 
 A TypeScript implementation of the [JSON:API](https://jsonapi.org/) specification. This monorepo contains the following packages:
