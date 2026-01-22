@@ -1,3 +1,13 @@
+## 0.4.3 (2026-01-22)
+
+### 🚀 Features
+
+- update version to 0.4.2 in package.json for jsonapi-angular and jsonapi ([3adc13a](https://github.com/valerymelou/json-api/commit/3adc13a))
+
+### ❤️ Thank You
+
+- Valery Melou @valerymelou
+
 ## 0.5.0 (2025-07-26)
 
 ### 🚀 Features
